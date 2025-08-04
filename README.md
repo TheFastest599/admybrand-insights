@@ -4,6 +4,10 @@ A modern, high-performance analytics dashboard built for digital marketing agenc
 
 ![Dashboard Preview](https://via.placeholder.com/800x400/1e40af/ffffff?text=ADmyBRAND+Insights+Dashboard)
 
+## 🌐 Live Demo
+
+**🚀 [View Live Demo on Vercel](https://admybrand-insights.vercel.app)** _(Deploy your own version)_
+
 ## 🚀 Features
 
 ### Core Dashboard Features
@@ -42,7 +46,27 @@ A modern, high-performance analytics dashboard built for digital marketing agenc
 - **Date Utils**: date-fns
 - **Performance**: React.memo, lazy loading, image optimization
 
-## 🏃‍♂️ Quick Start
+## 🚀 Quick Deployment
+
+### Deploy to Vercel (Recommended)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/TheFastest599/admybrand-insights)
+
+1. Click the "Deploy with Vercel" button above
+2. Connect your GitHub account
+3. Fork this repository
+4. Deploy automatically
+
+### Deploy to Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TheFastest599/admybrand-insights)
+
+1. Click the "Deploy to Netlify" button above
+2. Connect your GitHub account
+3. Configure build settings (already included in `netlify.toml`)
+4. Deploy automatically
+
+## 🏃‍♂️ Local Development
 
 ### Prerequisites
 

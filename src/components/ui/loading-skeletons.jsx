@@ -3,30 +3,62 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
 
-export function MetricCardSkeleton() {
+export function MetricCardSkeleton({ delay = 0 }) {
   return (
-    <Card>
-      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-        <Skeleton className="h-4 w-24" />
-        <Skeleton className="h-6 w-16 rounded-full" />
+    <Card
+      variant="elevated"
+      className="animate-pulse"
+      style={{ animationDelay: `${delay}ms` }}
+    >
+      <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
+        <div className="flex items-center gap-3">
+          <Skeleton className="h-10 w-10 rounded-lg animate-shimmer" />
+          <Skeleton className="h-4 w-24 animate-shimmer" />
+        </div>
+        <Skeleton className="h-6 w-16 rounded-full animate-shimmer" />
       </CardHeader>
-      <CardContent>
-        <Skeleton className="h-8 w-20 mb-1" />
-        <Skeleton className="h-3 w-32" />
+      <CardContent className="space-y-3">
+        <Skeleton className="h-9 w-28 animate-shimmer" />
+        <div className="flex items-center gap-2">
+          <Skeleton className="h-3 w-3 rounded animate-shimmer" />
+          <Skeleton className="h-3 w-32 animate-shimmer" />
+        </div>
+        <Skeleton className="h-1 w-full rounded-full animate-shimmer" />
       </CardContent>
     </Card>
   );
 }
 
-export function ChartSkeleton({ height = 350 }) {
+export function ChartSkeleton({ height = 350, delay = 0 }) {
   return (
-    <Card>
+    <Card
+      variant="elevated"
+      className="animate-fade-in"
+      style={{ animationDelay: `${delay}ms` }}
+    >
       <CardHeader>
-        <Skeleton className="h-6 w-48" />
-        <Skeleton className="h-4 w-64" />
+        <Skeleton className="h-6 w-48 animate-shimmer" />
+        <Skeleton className="h-4 w-64 animate-shimmer" />
       </CardHeader>
-      <CardContent>
-        <Skeleton className={`w-full h-[${height}px]`} />
+      <CardContent className="space-y-4">
+        <Skeleton
+          className={`w-full h-[${height}px] animate-shimmer rounded-lg`}
+        />
+        {/* Legend skeleton */}
+        <div className="flex gap-4 justify-center">
+          {[...Array(4)].map((_, i) => (
+            <div key={i} className="flex items-center gap-2">
+              <Skeleton
+                className="h-3 w-3 rounded-full animate-shimmer"
+                style={{ animationDelay: `${i * 100}ms` }}
+              />
+              <Skeleton
+                className="h-3 w-16 animate-shimmer"
+                style={{ animationDelay: `${i * 100}ms` }}
+              />
+            </div>
+          ))}
+        </div>
       </CardContent>
     </Card>
   );

@@ -1,40 +1,45 @@
 // Mock data for ADmyBRAND Insights Dashboard
+import { DollarSign, Users, Target, TrendingUp } from 'lucide-react';
 
 // Key Metrics Data
-export const keyMetrics = {
-  revenue: {
+export const keyMetrics = [
+  {
     value: 2847950,
     previousValue: 2234510,
     change: 27.4,
     label: 'Total Revenue',
     prefix: '$',
     suffix: '',
+    icon: DollarSign,
   },
-  users: {
+  {
     value: 847230,
     previousValue: 712450,
     change: 18.9,
     label: 'Active Users',
     prefix: '',
     suffix: '',
+    icon: Users,
   },
-  conversions: {
+  {
     value: 12547,
     previousValue: 9876,
     change: 27.1,
     label: 'Conversions',
     prefix: '',
     suffix: '',
+    icon: Target,
   },
-  growth: {
+  {
     value: 34.2,
     previousValue: 28.7,
     change: 5.5,
     label: 'Growth Rate',
     prefix: '',
     suffix: '%',
+    icon: TrendingUp,
   },
-};
+];
 
 // Revenue Chart Data (Line Chart)
 export const revenueData = [
