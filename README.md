@@ -2,11 +2,11 @@
 
 A modern, high-performance analytics dashboard built for digital marketing agencies. This project showcases advanced React patterns, performance optimizations, and accessibility best practices.
 
-![Dashboard Preview](https://via.placeholder.com/800x400/1e40af/ffffff?text=ADmyBRAND+Insights+Dashboard)
+![Dashboard Preview](./public/screenshot.png)
 
 ## 🌐 Live Demo
 
-**🚀 [View Live Demo on Vercel](https://admybrand-insights.vercel.app)** _(Deploy your own version)_
+**🚀 [View Live Demo on Vercel](https://admybrand-insights-tau.vercel.app)** _(Deploy your own version)_
 
 ## 🚀 Features
 
@@ -57,15 +57,6 @@ A modern, high-performance analytics dashboard built for digital marketing agenc
 3. Fork this repository
 4. Deploy automatically
 
-### Deploy to Netlify
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/TheFastest599/admybrand-insights)
-
-1. Click the "Deploy to Netlify" button above
-2. Connect your GitHub account
-3. Configure build settings (already included in `netlify.toml`)
-4. Deploy automatically
-
 ## 🏃‍♂️ Local Development
 
 ### Prerequisites
@@ -78,7 +69,7 @@ A modern, high-performance analytics dashboard built for digital marketing agenc
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/admybrand-insights.git
+   git clone https://github.com/TheFastest599/admybrand-insights.git
    cd admybrand-insights
    ```
 
