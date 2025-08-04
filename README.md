@@ -323,14 +323,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
 - [Lucide](https://lucide.dev/) - Icon library
 
-## 📞 Support
-
-For support, email support@admybrand.com or join our Slack channel.
-
----
-
-Built with ❤️ by the ADmyBRAND team
-
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
